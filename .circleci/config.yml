@@ -17,6 +17,9 @@ jobs:
       - run:
           name: "Build"
           command: cargo build --release --verbose
+      - run:
+          name: "Test"
+          command: cargo test --verbose
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
